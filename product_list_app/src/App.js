@@ -1,11 +1,10 @@
 import './styles/App.css';
-import './components/Products'
-import {HomeWhoHelp} from "./components/Products";
+import {DataTable} from './components/Data'
 
 function App() {
   return (
     <div className="App">
-      <HomeWhoHelp/>
+      <DataTable/>
     </div>
   );
 }
