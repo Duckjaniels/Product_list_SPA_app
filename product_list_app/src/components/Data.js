@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import {DataGrid} from '@material-ui/data-grid'
 import Box from '@mui/material/Box';
+import TextField from "@material-ui/core/TextField";
+import {Toolbar} from "@mui/material";
 
 
 const columns = [
@@ -16,6 +18,7 @@ const DataTable = () =>{
             .then((data) => data.json())
         .then((data) => setTableData(data.data))
     })
+    console.log(tableData)
 
     return(
 
@@ -25,7 +28,7 @@ const DataTable = () =>{
                     height: 500,
                     width: '100%',
                     '& .super-app-theme--cell': {
-                        backgroundColor: '#98B2D1',
+                        backgroundColor: `${tableData.color}`,
                         color: '#1a3e72',
                         fontWeight: '600',
                     },
