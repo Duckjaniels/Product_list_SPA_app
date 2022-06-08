@@ -50,7 +50,7 @@ Project is: _in progress_.
 
 - Text input for now don't allow user to filter by id, but it should be possible to do it in the future. For now user can search by id with use of data-grid component.
 - Background color of each row doesn't take color properties from the API, but it should be possible to do it in the future.
-
+- Adding some more features to the app, styling, etc.
 ## Contact
 
 Created by [_Duckjaniels_](https://www.linkedin.com/in/maksym-kaczorowski-008b3a154/) - feel free to contact me!
