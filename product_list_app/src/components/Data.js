@@ -22,7 +22,7 @@ const DataTable = () =>{
         height: 500,
         width: '100%',
         '& .super-app-theme--cell': {
-            backgroundColor: `${tableData.color}`,
+            backgroundColor: select.color,
             color: '#1a3e72',
             fontWeight: '600',
         },
@@ -35,8 +35,7 @@ const DataTable = () =>{
                 }
 
             >
-            <TextField id={tableData.id} type="number" label="Search" source="id"/>
-
+            <TextField type='search' placeholder="search by id"   />
              <DataGrid
              rows={tableData}
              columns={columns}
